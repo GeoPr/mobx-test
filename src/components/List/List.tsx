@@ -19,6 +19,7 @@ const List: React.FC = () => {
               <input
                 type="checkbox"
                 onChange={() => updateNotes(note.id, 'update')}
+                checked={note.completed}
               />
               <div>
                 <span>{note.title}</span>

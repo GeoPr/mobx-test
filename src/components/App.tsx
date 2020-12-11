@@ -8,7 +8,7 @@ import './App.scss'
 const App: React.FC = () => {
   return (
     <Container>
-      {/* <Counter /> */}
+      <Counter />
       <Form />
       <List />
     </Container>
