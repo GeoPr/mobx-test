@@ -1,0 +1,17 @@
+.page {
+  // .page__sc
+  &__sc {
+		min-height: 100vh;
+		padding: 100px 0px;
+		// display: grid;
+		// place-content: center;
+  }
+}
+.sc {
+  // .sc__container
+  &__container {
+  }
+  // .sc__body
+  &__body {
+  }
+}
