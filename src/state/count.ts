@@ -1,6 +1,6 @@
 import { makeAutoObservable, autorun } from 'mobx'
 
-export class Count {
+class Count {
   count = JSON.parse(localStorage.getItem('count') ?? '0')
 
   constructor() {
@@ -24,3 +24,5 @@ export class Count {
     localStorage.setItem('count', JSON.stringify(this.count))
   }
 }
+
+export const count = new Count()

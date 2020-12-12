@@ -1,11 +1,10 @@
 import React, { useState } from 'react'
 import { observer } from 'mobx-react'
-import { useContextValue } from '../../state/state'
+import { notes } from '../../state/notes'
 import './Form.scss'
 
 const Form: React.FC = () => {
-	const [title, setTitle] = useState('')
-	const { notes } = useContextValue()
+  const [title, setTitle] = useState('')
 	
 	const submitHandler = (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault()

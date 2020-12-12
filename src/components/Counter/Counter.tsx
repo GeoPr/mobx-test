@@ -1,11 +1,9 @@
 import React from 'react'
 import { observer } from 'mobx-react'
-import { useContextValue } from '../../state/state'
+import { count } from '../../state/count'
 import './Counter.scss'
 
 const Counter: React.FC = () => {
-  const { count } = useContextValue()
-
   const increment = () => {
     count.increment()
   }

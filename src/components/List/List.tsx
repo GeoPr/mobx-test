@@ -1,11 +1,9 @@
 import React from 'react'
 import { observer } from 'mobx-react'
-import { useContextValue } from '../../state/state'
+import { notes } from '../../state/notes'
 import './List.scss'
 
 const List: React.FC = () => {
-  const { notes } = useContextValue()
-
   const updateNotes = (id: string, fn: 'remove' | 'update') => {
     notes[fn](id)
   }
